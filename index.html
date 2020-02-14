@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chudier - Profile</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+  </head>
+    <style>
+    .main {
+        display: grid;
+        grid-template-columns: repeat(6 , 1fr);
+        grid-gap: 1em;
+        grid-template-areas: "a a a a c d"
+                             ". . . . e e"
+    }
+        
+    body {
+        margin: 0em;
+        font-family: 'Open Sans', ostrich-sans; 
+    }  
+
+    p {
+        margin: 0em;
+    
+    }
+
+    h2 {
+        margin: 0em;
+    }
+
+    h4 {
+        margin: 0em;
+    }
+
+    .page-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        background-color: rgb(255, 249, 240);
+        flex-direction: column;
+        grid-area: a;
+    }
+
+    .overview-header {
+        background-color: rgb(250, 241, 215);
+    }
+
+    .education-header {
+        background-color:rgb(251, 244, 230);
+    }
+
+    .experience-header {
+        background-color: rgb(250, 243, 241);
+    }
+    
+    .projects-header {
+        background-color:rgb(255, 243, 239);
+    }
+    
+    .header-list{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+
+    .header-list a {
+        display: block;
+        padding: 0.5em;
+    }
+
+    .overview-about {
+        font-size: 2em;
+        font-weight: 500;
+    }
+    .overview-about p {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-overview {
+        grid-area: b;
+    }
+
+    .section-education {
+        grid-area: c;
+        display: flex;
+        flex: row;
+    }
+
+    .section-experience {
+        grid-area: d;
+        display: flex;
+        flex: row;
+    }
+
+    .section-engineering {
+        grid-area: e;
+    }
+    </style>
+  <body>
+    <!-- Top bar -->
+    <section class="main">
+      <header class="page-header">
+        <h1>CHUDIER PORTFOLIO</h1>
+        <h3>Nob Hill, San Francisco, CA | P: +1 6198472896 | chudier.chuol@students.makeschool.com
+        </h3>
+
+        <p class="overview-about">FULL STACK DEVELOPER BASED IN SAN FRANCISCO, CA WITH A DIVERSE SET OF SKILLS, RANGING FROM DESIGN(HTML + CSS</p>
+
+         <nav>
+          <ul class="header-list">
+            <li><a href="#">contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Education -->
+      <section class="section-education">
+        <header class="education-header">
+          <h2>EDUCATION	</h2>
+          <h3 class="education-school">
+            MAKE SCHOOL – San Francisco, CA, USA	
+          </h3>
+          <h4 class="education-description">Bachelor of Science, Applied Computer Science; expected Aug 2020</h4>
+        </header>
+      </section>
+    
+      <!-- Experience -->
+      <section class="section-experience">
+        <header class="experience-header">
+          <h2>EXPERIENCE</h2>
+            <h3>TECHNICAL SKILLS – FULL STACK Developer</h3>
+        
+        
+            <p>Python, API,  JavaScript - Flask, Jinja Templating, Bootstrap
+            </p>
+            
+            <footer>
+            <p>
+                <button>Github</button>
+            </p>
+            </footer>
+        </header>
+      </section>
+
+    
+      <!-- Engineering projects -->
+      <section class="section-engineering">
+        <header class="projects-header">
+          <h2>ENGINEERING PROJECTS</h2>
+          
+        
+        
+            <h4>[democratizing-access] (backend)</h4>
+                <p>D.A.S.V(democratizing access to Silicon Valley), Is an online application where young people who are enthusiastic towards STEM areas, with a particular focus in computer science, can find others with shared interests outside their immediate communities.</p><br>
+
+            <h4>[airfrica-travelco](Flask, Bootstrap - backend)</h4>
+                <p>Airfrica, promotes Africa as a feasible travel destination by sourcing curated flight deals to the continent.
+                </p><br>
+
+            <h4>[contractor-project-store](Flask - backend)</h4>
+                <p>Consumers can compile a shopping list of groceries to purchase on the next visit to the grocery store (a grocery list) through visual content and notes.</p>
+        </header>
+    </section>    
+        
+        
